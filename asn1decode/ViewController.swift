@@ -20,7 +20,7 @@ class ViewController: NSViewController, WKNavigationDelegate {
         if let url = Bundle.main.url(forResource: "index", withExtension: "html", subdirectory: "asn1js") {
             webView.loadFileURL(url, allowingReadAccessTo: url.deletingLastPathComponent())
         }
-
+        
     }
 
     override var representedObject: Any? {
