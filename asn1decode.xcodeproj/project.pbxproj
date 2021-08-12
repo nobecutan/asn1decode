@@ -11,6 +11,7 @@
 		D959A8DB26C50D0B005E1607 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D959A8DA26C50D0B005E1607 /* ViewController.swift */; };
 		D959A8DD26C50D0D005E1607 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D959A8DC26C50D0D005E1607 /* Assets.xcassets */; };
 		D959A8E026C50D0D005E1607 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D959A8DE26C50D0D005E1607 /* Main.storyboard */; };
+		D959A8EC26C518D1005E1607 /* asn1js in Resources */ = {isa = PBXBuildFile; fileRef = D959A8EB26C518D1005E1607 /* asn1js */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,8 @@
 		D959A8DF26C50D0D005E1607 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D959A8E126C50D0D005E1607 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D959A8E226C50D0D005E1607 /* asn1decode.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = asn1decode.entitlements; sourceTree = "<group>"; };
+		D959A8E926C51151005E1607 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		D959A8EB26C518D1005E1607 /* asn1js */ = {isa = PBXFileReference; lastKnownFileType = folder; path = asn1js; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +42,7 @@
 			children = (
 				D959A8D726C50D0B005E1607 /* asn1decode */,
 				D959A8D626C50D0B005E1607 /* Products */,
+				D959A8E826C51151005E1607 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -53,6 +57,7 @@
 		D959A8D726C50D0B005E1607 /* asn1decode */ = {
 			isa = PBXGroup;
 			children = (
+				D959A8EB26C518D1005E1607 /* asn1js */,
 				D959A8D826C50D0B005E1607 /* AppDelegate.swift */,
 				D959A8DA26C50D0B005E1607 /* ViewController.swift */,
 				D959A8DC26C50D0D005E1607 /* Assets.xcassets */,
@@ -61,6 +66,14 @@
 				D959A8E226C50D0D005E1607 /* asn1decode.entitlements */,
 			);
 			path = asn1decode;
+			sourceTree = "<group>";
+		};
+		D959A8E826C51151005E1607 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D959A8E926C51151005E1607 /* WebKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -121,6 +134,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D959A8DD26C50D0D005E1607 /* Assets.xcassets in Resources */,
+				D959A8EC26C518D1005E1607 /* asn1js in Resources */,
 				D959A8E026C50D0D005E1607 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
