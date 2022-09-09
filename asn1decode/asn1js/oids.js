@@ -1904,6 +1904,7 @@ return {
 "2.5.4.75": { "d": "xMLPrivilegeInfo", "c": "X.520 DN component" },
 "2.5.4.76": { "d": "xmlPrivPolicy", "c": "X.520 DN component" },
 "2.5.4.82": { "d": "permission", "c": "X.520 DN component" },
+"2.5.4.97": { "d": "organizationIdentifier", "c": "X.520 DN component" },
 "2.5.6.0": { "d": "top", "c": "X.520 objectClass" },
 "2.5.6.1": { "d": "alias", "c": "X.520 objectClass" },
 "2.5.6.2": { "d": "country", "c": "X.520 objectClass" },
