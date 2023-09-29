@@ -21,6 +21,7 @@
       "size" : "32x32"
     },
     {
+      "filename" : "Icon-App-83.5x83.5@2x.png",
       "idiom" : "mac",
       "scale" : "1x",
       "size" : "128x128"
@@ -46,6 +47,7 @@
       "size" : "512x512"
     },
     {
+      "filename" : "ItunesArtwork@2x.png",
       "idiom" : "mac",
       "scale" : "2x",
       "size" : "512x512"

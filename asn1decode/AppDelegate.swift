@@ -11,9 +11,7 @@ import WebKit
 @main
 class AppDelegate: NSObject, NSApplicationDelegate {
 
-    
     var webView: WKWebView!
-
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Insert code here to initialize your application
@@ -23,18 +21,21 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         // Insert code here to tear down your application
     }
 
-    func application(_ sender: NSApplication, openFile filename: String) -> Bool {
-            
-        print ("File open func called!" + filename);
-        
-        let rootViewController = NSApplication.shared.mainWindow?.windowController?.contentViewController as! ViewController
-        webView = rootViewController.webView
-        webView.evaluateJavaScript("document.read('" + filename + "')", completionHandler: nil)
+    func applicationSupportsSecureRestorableState(_ app: NSApplication) -> Bool {
         return true
     }
 
     func applicationShouldTerminateAfterLastWindowClosed(_ sender: NSApplication) -> Bool {
         return true
     }
+
+    func application(_ sender: NSApplication, openFile filename: String) -> Bool {
+        print ("File open func called!" + filename);
+        
+        let rootViewController = NSApplication.shared.mainWindow?.windowController?.contentViewController as! ViewController
+        rootViewController.docToLoad = filename
+        return true
+    }
+
 }
 
