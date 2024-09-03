@@ -2737,4 +2737,5 @@ export const oids = {
 "1.2.40.0.39.3.1": { "d": "Usage Extension", "c": "PrimeSign GmbH private OID Tree" },
 "1.2.40.0.39.3.1.1": { "d": "Identifiziert via VideoIdent", "c": "PrimeSign GmbH private OID Tree" },
 "1.2.40.0.39.3.1.2": { "d": "Nicht ID-faehig", "c": "PrimeSign GmbH private OID Tree" },
+"1.2.40.0.39.3.1.3": { "d": "Seal authorizer", "c": "PrimeSign GmbH private OID Tree" },
 };
