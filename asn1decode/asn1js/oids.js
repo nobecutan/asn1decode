@@ -2,12 +2,7 @@
 // which is made by Peter Gutmann and whose license states:
 //   You can use this code in whatever way you want,
 //   as long as you don't try to claim you wrote it.
-(typeof define != "undefined" ? define : function (factory) { "use strict";
-    if (typeof module == "object") module.exports = factory();
-    else window.oids = factory();
-})(function () {
-"use strict";
-return {
+export const oids = {
 "0.2.262.1.10": { "d": "Telesec", "c": "Deutsche Telekom" },
 "0.2.262.1.10.0": { "d": "extension", "c": "Telesec" },
 "0.2.262.1.10.1": { "d": "mechanism", "c": "Telesec" },
@@ -2742,5 +2737,4 @@ return {
 "1.2.40.0.39.3.1": { "d": "Usage Extension", "c": "PrimeSign GmbH private OID Tree" },
 "1.2.40.0.39.3.1.1": { "d": "Identifiziert via VideoIdent", "c": "PrimeSign GmbH private OID Tree" },
 "1.2.40.0.39.3.1.2": { "d": "Nicht ID-faehig", "c": "PrimeSign GmbH private OID Tree" },
-"END": ""
-};});
+};
