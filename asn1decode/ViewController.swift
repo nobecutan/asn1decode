@@ -9,10 +9,10 @@ import Cocoa
 import WebKit
 
 class ViewController: NSViewController, WKUIDelegate {
-
+    
     var webView: WKWebView!
     var docToLoad: String!
-
+    
     override func loadView() {
         let webConfiguration = WKWebViewConfiguration ();
         webConfiguration.preferences.setValue(true, forKey: "allowFileAccessFromFileURLs");
@@ -20,10 +20,10 @@ class ViewController: NSViewController, WKUIDelegate {
         webView.uiDelegate = self ;
         view = webView;
     }
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         if let url = Bundle.main.url(forResource: "index" , withExtension: "html" , subdirectory: "asn1js") {
             let path = url.deletingLastPathComponent();
             self.webView.loadFileURL(url , allowingReadAccessTo: path);
@@ -34,6 +34,17 @@ class ViewController: NSViewController, WKUIDelegate {
             }
         }
     }
-
+    
+    override func keyDown(with event: NSEvent) {
+        // 0x100 = NSEvent.ModifierFlags.deviceIndependentFlagsMask subset; besser use modifierFlags
+        let isCmd = event.modifierFlags.contains(.command)
+        let isEnter = event.keyCode == 36 || event.keyCode == 76 // Return (36) oder NumPad Enter (76)
+        if isCmd && isEnter {
+            webView.evaluateJavaScript("document.querySelector('#butDecode')?.click();", completionHandler: nil)
+        } else {
+            super.keyDown(with: event)
+        }
+    }
+    
 }
 
