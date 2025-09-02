@@ -2722,6 +2722,7 @@ export const oids = {
 "1.3.6.1.4.1.40869.1.1.22.3": { "d": "TWCA EV policy", "c": "TWCA Root Certification Authority" },
 "2.16.840.1.113733.1.7.23.6": { "d": "VeriSign EV policy", "c": "VeriSign Class 3 Public Primary Certification Authority" },
 "2.16.840.1.114171.500.9": { "d": "Wells Fargo EV policy", "c": "Wells Fargo WellsSecure Public Root Certificate Authority" },
+"0.4.0.194121.2.1": { "d": "Validity Assured - Short Term extension", "c": "ETSI EN 319 412-1 Part 1: Overview and common data structures" },
 "1.2.40.0.10": { "d": "Verwaltung AT", "c": "Object Identifier der oeffentlichen Verwaltung" },
 "1.2.40.0.10.1": { "d": "Organisation", "c": "Object Identifier der oeffentlichen Verwaltung" },
 "1.2.40.0.10.1.11": { "d": "Teilbaum Bundesministerium fuer Finanzen", "c": "RKSV" },
